@@ -1,0 +1,22 @@
+{
+  "name": "NCKFoundation",
+  "version": "0.1.0",
+  "summary": "My NCKFoundation.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mantou811/NCKFoundation",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mantou811": "2287951815@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/mantou811/NCKFoundation.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "NCKFoundation/Classes/*.{h,m}"
+}

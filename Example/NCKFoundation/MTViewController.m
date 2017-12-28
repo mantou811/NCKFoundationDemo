@@ -7,6 +7,7 @@
 //
 
 #import "MTViewController.h"
+#import "NCKRootObject.h"
 
 @interface MTViewController ()
 
