@@ -11,6 +11,10 @@
 #endif
 
 #import "NCKRootObject.h"
+#import "WechatAuthSDK.h"
+#import "WXApi.h"
+#import "WXApiObject.h"
+#import "NCKChild.h"
 
 FOUNDATION_EXPORT double NCKFoundationVersionNumber;
 FOUNDATION_EXPORT const unsigned char NCKFoundationVersionString[];

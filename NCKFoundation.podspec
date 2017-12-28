@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NCKFoundation'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'My NCKFoundation.'
 
 # This description is used to generate tags and improve search results.
@@ -21,23 +21,28 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/mantou811/NCKFoundation'
+  s.homepage         = 'https://github.com/mantou811/NCKFoundationDemo'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'mantou811' => '2287951815@qq.com' }
-  s.source           = { :git => 'https://github.com/mantou811/NCKFoundation.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/mantou811/NCKFoundationDemo.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
 #  s.source_files = 'NCKFoundation/*.{h,m}'
-  s.source_files = 'NCKFoundation/Classes/*.{h,m}'
-  
+  s.source_files = 'NCKFoundation/Classes/*.{h,m}','NCKFoundation/Classes/ThirdParty/*.{h}'
+  s.vendored_libraries  = 'NCKFoundation/Classes/ThirdParty/*.{a}'
+  s.frameworks = 'SystemConfiguration','CoreGraphics','CoreTelephony','Security','CoreLocation','JavaScriptCore'
+  s.libraries  = 'iconv','sqlite3','stdc++','z'
+  s.subspec 'NCKSub' do |cs|
+      cs.source_files = 'NCKFoundation/Classes/NCKSub/*.{h,m}'
+  end
   # s.resource_bundles = {
   #   'NCKFoundation' => ['NCKFoundation/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'AFNetworking', '~> 3.1.0'
 end

@@ -8,6 +8,7 @@
 
 #import "MTViewController.h"
 #import "NCKRootObject.h"
+#import "WXApi.h"
 
 @interface MTViewController ()
 
